@@ -1,0 +1,96 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+/* Styles import */
+@import url(/css/header.css);
+@import url(/css/index.css);
+
+/* Root styles */
+
+:root {
+    
+    /* Colors */
+    --yellow: #F3BD54;
+
+    /* Fonts */
+    --titles: 'Rubik Mono One', sans-serif;
+    --text: 'Raleway', sans-serif;
+
+    /* Sizes */
+    --contentWidth: 1000px;
+}
+
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+body {
+    background-color:#1C1710;
+}
+
+
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-spacing {
+    letter-spacing: 0.4em;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.hero-divider {
+    max-width: 450px;
+}
+
+.divider-line {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
+
+.divider-icon {
+    width: 40px;
+}
+
+.big-title {
+    font-family: var(--titles);
+    font-size: 40px;
+}
+
+.medium-title {
+    font-family: var(--titles);
+    font-size: 30px;
+}
+
+.small-title {
+    font-family: var(--titles);
+    font-size: 25px;
+}
+
+.xsmall-title {
+    font-family: var(--titles);
+    font-size: 20px;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.superlight-text {
+    font-weight: 200;
+}

@@ -1,0 +1,112 @@
+.index-hero {
+    height: 600px;
+    width: 100%;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 1100px;
+    width: 70%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* flex: 1; */
+
+    max-width: 450px;
+
+    gap: 10px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text {
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.divider-hero {
+    width: 100%;
+}
+
+.index-divider {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.index-blogs {
+    height: 600px;
+    width: 80%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousell {
+    width: 80%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousell-item {
+    width: 300px;
+    height: 100%;
+    
+    color: white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.carousell-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.carousell-item a {
+    width: 100%;
+}
+
+.carousell-title {
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-divider {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+
+
+.carousell-text {
+    width: 95%;
+    margin-top: 20px;
+}
+
+.carousell-text p {
+    width: 80%;
+}
