@@ -6,6 +6,7 @@
 @import url(/css/index.css);
 @import url(/css/footer.css);
 @import url(/css/blogs.css);
+@import url(/css/about.css);
 
 /* Root styles */
 
@@ -98,6 +99,10 @@ button {
 
 .light-text {
     font-weight: 300;
+}
+
+.small-lp {
+    line-height: 140%;
 }
 
 .superlight-text {
