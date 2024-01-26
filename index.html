@@ -2,8 +2,10 @@
     <html lang="en"> 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <script type="module" src="script.js"></script>
+        <link rel="stylesheet" href="/style.css">
+        <script type="module" src="/script.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="/media/icons/title-icon.png">
         <title>The Brewery</title>
     </head>
     <body>
@@ -11,7 +13,7 @@
             <a href="/index.html"><img class="brewery-logo" src="/media/icons/logo.png" alt="The Brewery Logo"></a>
             <nav class="header-nav">
                 <ul class="nav-list">
-                    <li class="nav-item blogs"><a href="">Blogs</a></li>
+                    <li class="nav-item blogs"><a href="/html/blogs.html">Blogs</a></li>
                     <li class="nav-item about"><a href="">About</a></li>
                     <li class="nav-item contact"><a href="">Contact</a></li>
                 </ul>
@@ -24,7 +26,7 @@
                     <h1 class="hero-title big-title">Welcome<span class="title-spacing"> </span>to<br>The<span class="title-spacing"> </span>Brewery</h1>
                     <div class="divider hero-divider">
                         <div class="divider-line"></div>
-                        <img class="divider-icon" src="/media//icons/hop-white.png" alt="">
+                        <img class="divider-icon" src="/media/icons/hop-white.png" alt="">
                         <div class="divider-line"></div>
                     </div>
                     <p class="hero-text">Your #1 destination for years of experience with Fermentation, Flavor, and Frothy Adventures. Sip, Savor, Brew – Because Great Stories Begin with Great Beer.</p>
@@ -32,7 +34,7 @@
             </section>
             <div class="index-divider"></div>
             <section class="index-blogs">
-                <button class="prev"></button>
+                <button class="prev" id="prev-carousell"><img src="/media/icons/arrow.png" alt="left arrow"></button>
                 <div class="carousell">
                     <div class="carousell-item">
                         <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
@@ -46,13 +48,123 @@
                             </p>
                         </div>
                     </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousell-item">
+                        <img class="carousell-image" src="/media/images/holding-hops.jpg" alt="Blog image">
+                        <div class="carousell-title">
+                            <h2 class="small-title">HOPS</h2>
+                            <div class="card-divider"></div>
+                            <p class="card-date superlight-text">18/01/24</p>
+                        </div>
+                        <div class="carousell-text light-text">
+                            <p>Welcome, beer enthusiasts, to the heart of the brewing process, where botanical magic meets malty alchemy. In the world of craft beer, few ingredients are as celebrated and essential as hops.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                <button class="next"></button> 
+                <button class="next" id="next-carousell"><img src="/media/icons/arrow.png" alt="Right arrow"></button> 
             </section>
+            <section class="how-to-beer">
+                <div class="ingredients-content">
+                    <h2 class="big-title">HOW TO BEER</h2>
+                    <div class="ingredients">
 
+                        <!-- need to add links to each ingredient -->
+                        <div class="ingredient hops">
+                            <img src="/media/icons/hops-green.png" alt="Hops icon">
+                            <h3 class="medium-title">HOPS</h3>
+                        </div>
+                        <div class="ingredient water">
+                            <img src="/media/icons/water-blue.png" alt="Water icon">
+                            <h3 class="medium-title">WATER</h3>
+                        </div>
+                        <div class="ingredient malt">
+                            <img src="/media/icons/wheat-yellow.png" alt="Malt icon">
+                            <h3 class="medium-title">MALT</h3>
+                        </div>
+                        <div class="ingredient yeast">
+                            <img src="/media/icons/yeast-orange.png" alt="Yeast icon">
+                            <h3 class="medium-title">YEAST</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
-
+            <div class="footer-content">
+                <a href="/index.html"><img class="footer-logo" src="/media/icons/logo.png" alt="The Brewery logo"></a>
+                <div class="footer-social">
+                    <ul class="social-list">
+                        <li class="social-item"><a href=""><img src="/media/icons/some/twitter (1).png" alt="Facebook icon"></a></li>
+                        <li class="social-item"><a href=""><img src="/media/icons/some/youtube (1).png" alt="Instagram icon"></a></li>
+                        <li class="social-item"><a href=""><img src="/media/icons/some/instagram (1).png" alt="Twitter icon"></a></li>
+                    </ul>
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2024 Daniel Ekerhovd
+                </p>
+            </div>
         </footer>
     </body>
     

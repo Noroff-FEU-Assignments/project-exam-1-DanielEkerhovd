@@ -4,6 +4,8 @@
 /* Styles import */
 @import url(/css/header.css);
 @import url(/css/index.css);
+@import url(/css/footer.css);
+@import url(/css/blogs.css);
 
 /* Root styles */
 
@@ -40,6 +42,13 @@ a:visited {
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
 }
 
 .title-spacing {

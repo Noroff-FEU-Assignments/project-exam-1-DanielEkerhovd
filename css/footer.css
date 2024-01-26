@@ -1,0 +1,32 @@
+footer {
+    height: 300px;
+    background-color: var(--yellow);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo {
+    width: 280px;
+}
