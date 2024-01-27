@@ -3,10 +3,9 @@ footer {
     background-color: var(--yellow);
 }
 
-footer ul {
+.social-list {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
