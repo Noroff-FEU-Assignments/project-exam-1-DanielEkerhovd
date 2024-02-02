@@ -45,8 +45,7 @@
     width: 95%;
 }
 
-.new-blog-text {
-    font-size: 20px;
+.new-blog-text, .blog-text {
     align-self: flex-start;
     width: 95%;
 
@@ -54,6 +53,14 @@
 
     display: flex;
     justify-content: space-between;
+}
+
+.new-blog-text {
+    font-size: 20px;
+}
+
+.blog-text {
+    font-size: 18px;
 }
 
 .new-blog-text p {

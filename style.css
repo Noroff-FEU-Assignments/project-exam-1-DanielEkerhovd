@@ -97,6 +97,7 @@ button {
 .xsmall-title {
     font-family: var(--titles);
     font-size: 20px;
+    height: 31.2px;
 }
 
 .light-text {
