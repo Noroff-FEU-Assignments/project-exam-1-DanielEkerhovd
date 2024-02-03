@@ -1,6 +1,12 @@
+.blogs-page {
+    width: 80%;
+    max-width: var(--contentWidth);
+    margin: 80px auto;
+}
+
 .blogs-content {
     width: var(--contentWidth);
-    margin: 100px auto;
+    margin: 80px auto;
     min-height: 1080px;
 
     display: flex;
@@ -10,6 +16,10 @@
 
 .blogs-headtitle {
     color: white;
+}
+
+.blogs-title {
+    width: 100%;
 }
 
 .blogs-divider {
@@ -61,6 +71,7 @@
 
 .blog-text {
     font-size: 18px;
+    padding-right: 10px;
 }
 
 .new-blog-text p {
