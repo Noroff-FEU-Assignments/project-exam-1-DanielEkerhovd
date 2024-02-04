@@ -4,10 +4,26 @@ header {
     background-color: var(--yellow);
     color: black;
 
+    position: sticky;
+    top: 0;
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+
+    transition: 0.2s;
+
+}
+
+.index-link {
+    height: 90%;
+}
+
+.brewery-logo {
+    height: 100%;
+    width: auto;
 }
 
 .nav-list {
@@ -21,4 +37,3 @@ header {
     font-weight: 600;
     font-size: 1.5rem;
 }
-

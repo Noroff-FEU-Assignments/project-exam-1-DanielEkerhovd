@@ -3,8 +3,11 @@ import { maxTextLength } from '../tools/textLenght.js';
 import { maxTitleLenght } from '../tools/textLenght.js';
 import { makeTitleFontSmaller } from '../tools/textLenght.js';
 import { createNewestPost } from './newestPost.js';
+import { backToTop } from '../tools/backToTop.js';
 
 export function createBlogHtml(api) {
+
+    backToTop();
 
     const blogContainer = document.querySelector('.blog-posts');
 

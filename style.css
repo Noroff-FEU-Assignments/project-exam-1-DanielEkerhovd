@@ -97,7 +97,6 @@ button {
 .xsmall-title {
     font-family: var(--titles);
     font-size: 20px;
-    height: 31.2px;
 }
 
 .light-text {
@@ -111,3 +110,22 @@ button {
 .superlight-text {
     font-weight: 200;
 }
+
+/* Font sizes */
+
+.big-font
+{
+    font-size: 30px;
+}
+
+.medium-font
+{
+    font-size: 20px;
+}
+
+.small-font
+{
+    font-size: 15px;
+}
+
+

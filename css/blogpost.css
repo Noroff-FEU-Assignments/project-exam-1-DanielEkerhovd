@@ -5,11 +5,17 @@
     margin: 0 auto;
 }
 
+.backButton {
+    color: white;
+    align-self: start;
+    font-size: 1rem;
+}
+
 .blogpost-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .blogpost-hero-img {
@@ -21,7 +27,8 @@
 
 .blogpost-title-text {
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    
 }
 
 .blogpost-information {
@@ -44,14 +51,13 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    justify-content: space-between;
 }
 
 
 .blogpost-main-image {
     height: 450px;
     width: 300px;
+    object-fit: cover;
 }
 
 .ingredient-icon {
@@ -75,7 +81,6 @@
 }
 
 .brew-type {
-    width: 130px;
     text-align: end;
 }
 
