@@ -13,7 +13,7 @@ let currentPage = window.location.pathname;
 shrinkHeader();
 
 switch (currentPage) {
-    case '/index.html' || '/':
+    case '/index.html' || "/":
 
         indexCarousell();
         createCarousellContent(apiCalled);
