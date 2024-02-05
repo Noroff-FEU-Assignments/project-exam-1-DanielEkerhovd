@@ -22,12 +22,12 @@ switch (currentPage) {
         console.log(apiCalled[0].acf);
 
         break;
-    case '/blogs.html':
+    case '/blogs.html' || '/blogs':
 
          createBlogHtml(apiCalled);
 
         break;
-    case '/blogpost.html':
+    case '/blogpost.html' || '/blogpost':
         createBlogPostHtml(apiCalled);
         break;
     default:
