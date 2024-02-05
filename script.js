@@ -9,6 +9,7 @@ import { indexCarousell } from "./js/carousell/carousell.js";
 const apiCalled = await fetchData(apiURL);
 
 let currentPage = window.location.pathname;
+console.log(currentPage);
 
 shrinkHeader();
 
@@ -31,5 +32,6 @@ switch (currentPage) {
         break;
     default:
         // Error code
+        console.log("Error")
         break;
 }
