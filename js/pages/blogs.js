@@ -21,7 +21,7 @@ export function createBlogHtml(api) {
 
     //Create the blog post card
     const blogPostCard = document.createElement('a');
-    blogPostCard.href = `/html/blogpost.html?blogid=${api.id}`;
+    blogPostCard.href = `/blogpost.html?blogid=${api.id}`;
     blogPostCard.classList.add('blog-post-card');
     blogContainer.appendChild(blogPostCard);
 
