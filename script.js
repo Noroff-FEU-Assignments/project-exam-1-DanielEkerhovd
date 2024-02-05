@@ -14,22 +14,27 @@ console.log(currentPage);
 shrinkHeader();
 
 switch (currentPage) {
-    case '/index.html' || '/':
+    case '/':
+    case '/index.html':
 
         indexCarousell();
         createCarousellContent(apiCalled);
 
-        console.log(apiCalled[0].acf);
-
         break;
-    case '/blogs.html' || '/blogs':
+
+    case '/blogs.html':
+    case '/blogs':
 
          createBlogHtml(apiCalled);
 
         break;
-    case '/blogpost.html' || '/blogpost':
+
+    case '/blogpost.html':
+    case '/blogpost':
+
         createBlogPostHtml(apiCalled);
         break;
+        
     default:
         // Error code
         console.log("Error")
