@@ -8,12 +8,9 @@ import { indexCarousell } from "./js/carousell/carousell.js";
 
 const apiCalled = await fetchData(apiURL);
 
-let currentPage = window.location.pathname;
-console.log(currentPage);
-
 shrinkHeader();
 
-switch (currentPage) {
+switch (window.location.pathname) {
     case '/':
     case '/index.html':
 

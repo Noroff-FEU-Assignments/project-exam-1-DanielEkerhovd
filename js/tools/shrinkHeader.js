@@ -7,6 +7,7 @@ export function shrinkHeader() {
             document.querySelector('header').style.height = "90px";
             
         } else {
+            
             document.querySelector('header').style.height = "130px";
 
         }
