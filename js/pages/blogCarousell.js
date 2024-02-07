@@ -7,9 +7,14 @@ export function createCarousellContent (api) {
 
     api.forEach(async (api) => {
         
+        const carousellLink = document.createElement('a');
+        carousellLink.href = `/blogpost.html?blogid=${api.id}`;
+        carousellLink.classList.add('carousell-link');
+        carousell.appendChild(carousellLink);
+
         const carousellItems = document.createElement('div');
         carousellItems.classList.add('carousell-item');
-        carousell.appendChild(carousellItems);
+        carousellLink.appendChild(carousellItems);
 
         const carousellImage = document.createElement('img');
         carousellImage.classList.add('carousell-image');

@@ -56,6 +56,10 @@
     justify-content: center;
 }
 
+.carousell a {
+    height: 100%;
+}
+
 .carousell {
     width: 80%;
     max-width: 1260px;

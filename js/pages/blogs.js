@@ -93,6 +93,7 @@ export function createBlogHtml(api) {
             }
 
             moreButton.style.display = 'none';
+            moreButton.disabled = true;
                 
          });
         }
