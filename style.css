@@ -10,6 +10,8 @@
 @import url(/css/contact.css);
 @import url(/css/blogpost.css);
 
+@import url(/css/mediaquery/mq_index.css);
+
 /* Root styles */
 
 :root {

@@ -1,17 +1,17 @@
-export function checkingredients(api, ingredient) {
+export function checkingredients(text, current) {
 
     let textValue = '';
 
-    switch (api) {
+    switch (text) {
     case 'show':
-            textValue = ingredient;
+            textValue = current;
             break;
     
         case "":
             break;
     
         default:
-            textValue = api + ' ' + ingredient;
+            textValue = text + ' ' + current;
             break;
         }
 
