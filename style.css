@@ -10,7 +10,11 @@
 @import url(/css/contact.css);
 @import url(/css/blogpost.css);
 
+@import url(/css/mediaquery/mq_header.css);
+@import url(/css/mediaquery/mq_footer.css);
 @import url(/css/mediaquery/mq_index.css);
+@import url(/css/mediaquery/mq_blogs.css);
+
 
 /* Root styles */
 
@@ -49,11 +53,24 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 
+}
+
+.show {
+    max-height: 500px;
+    padding: 50px;
+}
+
+.active {
+    display: block;
 }
 
 .title-spacing {

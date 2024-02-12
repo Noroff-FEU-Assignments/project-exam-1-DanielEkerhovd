@@ -1,4 +1,5 @@
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+    
     .index-hero {
         flex-direction: column;
         justify-content: center;
@@ -20,17 +21,70 @@
         padding: 0;
         width: 80%;
 
-        }
+    }
 
 
-        .how-to-beer {
-            height: auto;
-        }
+    .how-to-beer {
+        height: auto;
+    }
 
-        .ingredients {
-            flex-wrap: wrap;
-        }
+    .ingredients {
+        flex-wrap: wrap;
+        justify-content: end;
+
+        width: 400px;
+    }
 
 
+}
 
+@media (max-width: 719px) {
+    .ingredients {
+        width: 620px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .ingredients {
+        gap: 20px;
+    }
+
+    .ingredients img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ingredients-content h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+
+   .hero-content {
+    align-items: center;
+    text-align: center;
+   }
+
+    .hero-content h1 {
+        font-size: 6vw;
+    }
+
+    .hero-content p {
+        font-size: 3vw;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .ingredients-content h2 {
+        display: none;
+    }
+
+    .ingredients {
+        justify-content: center;
+        
+        margin: 0 auto; 
+    }
 }

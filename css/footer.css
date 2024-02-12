@@ -1,6 +1,8 @@
 footer {
     height: 300px;
     background-color: var(--yellow);
+
+    transition: 0.2s;
 }
 
 .social-list {

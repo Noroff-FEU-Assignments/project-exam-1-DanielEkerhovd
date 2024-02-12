@@ -4,11 +4,11 @@ export function shrinkHeader() {
 
     function scrollFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.querySelector('header').style.height = "90px";
+            document.querySelector('.header-content').style.height = "90px";
             
         } else {
             
-            document.querySelector('header').style.height = "130px";
+            document.querySelector('.header-content').style.height = "130px";
 
         }
     }

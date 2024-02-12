@@ -5,9 +5,11 @@ import { createBlogPostHtml } from "./js/pages/blogpost.js";
 import { shrinkHeader } from "./js/tools/shrinkHeader.js";
 import { createCarousellContent } from "./js/pages/blogCarousell.js";
 import { indexCarousell } from "./js/carousell/carousell.js";
+import { hamburgerMenu } from "./js/content/hamburgerMenu.js";
 
 const apiCalled = await fetchData(apiURL);
 
+hamburgerMenu();
 shrinkHeader();
 
 switch (window.location.pathname) {

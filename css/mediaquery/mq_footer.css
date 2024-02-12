@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-logo {
+        width: 180px;
+        height: auto;
+    }
+
+    .social-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+    
+}

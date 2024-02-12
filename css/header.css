@@ -1,7 +1,8 @@
 header {
     width: 100%;
-    height: 130px;
-    transition: 0.2s;
+    height: auto;
+    position: sticky;
+    top: 0;
 }
 
 .header-content {
@@ -10,26 +11,29 @@ header {
     background-color: var(--yellow);
     color: black;
 
-    position: fixed;
-    top: 0;
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    gap: 20px;
 
     z-index: 1;
+    transition: 0.2s;
 
 }
 
 .index-link {
-    height: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .brewery-logo {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height: 80%;
+
+    /* max-width: 200px  */
 }
 
 .nav-list {
@@ -42,4 +46,39 @@ header {
 .nav-item {
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+.hamburger-list {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+
+
+    gap: 20px;
+    z-index: 1;
+
+    transition: max-height 0.3s ease-out;
+    max-height: 0; 
+    overflow: hidden;
+}
+
+.hamburger-button {
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    background-size: contain;
+    background-image: url(/media/icons/hamburger.png);
 }
