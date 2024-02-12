@@ -8,7 +8,7 @@ header {
 
 .header-content {
     width: 100%;
-    height: inherit;
+    height: 130px;
     background-color: var(--yellow);
     color: black;
 
