@@ -76,6 +76,18 @@
     }
 }
 
+@media (max-width: 550px) {
+
+    .carousell {
+
+        width: 90%;
+    }
+
+    .index-blogs button {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .ingredients-content h2 {
         display: none;

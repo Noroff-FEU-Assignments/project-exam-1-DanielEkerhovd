@@ -45,15 +45,30 @@
 }
 
 .index-blogs {
-    height: 600px;
+    height: auto;
     width: 80%;
 
-    margin: 0 auto;
+    margin: 50px auto;
     gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogs-carousell {
+    width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    gap: 20px;
+}
+
+.carousell-title {
+    color: white;
 }
 
 .carousell a {
