@@ -63,16 +63,15 @@
 @media (max-width: 600px) {
 
    .hero-content {
-    align-items: center;
-    text-align: center;
+    
    }
 
     .hero-content h1 {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .hero-content p {
-        font-size: 3vw;
+        font-size: 3.5vw;
         max-width: 80%;
     }
 }
