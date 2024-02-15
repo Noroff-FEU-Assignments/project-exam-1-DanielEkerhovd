@@ -2,8 +2,6 @@ import { modalControlls } from '../tools/modal.js'
 
 export function createModal (container, location ) {
 
-    console.log("Creating modal");
-
     const modalContainer = document.querySelector(container);
 
     const modal = document.createElement('div');

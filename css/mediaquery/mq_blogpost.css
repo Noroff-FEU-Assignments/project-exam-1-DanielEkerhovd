@@ -1,0 +1,49 @@
+@media (max-width: 1000px) {
+
+    .blogpost-hero-img {
+        height: 200px;
+    }
+    .blogpost-information {
+        display: block;
+    }
+    .blogpost-media {
+        display: none;
+    }
+
+    .blogpost-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .blogpost-main-image, .blogpost-end-image{
+        width: 100%;
+        height: 150px;
+    }
+
+    .brewing-indicators {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .brewing-indicators > div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex:1;
+    }
+
+    .brewing-indicators p {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .blogpost-title h1 {
+        font-size: 2em;
+    }
+}

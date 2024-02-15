@@ -6,8 +6,6 @@ export function returnToBlogs () {
     createBackButton.classList.add('backButton');
     header.appendChild(createBackButton);
 
-    console.log('returnToBlogs');
-
     createBackButton.addEventListener('click', function() {
         history.back();
     });

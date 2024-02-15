@@ -52,13 +52,17 @@
     justify-content: space-between;
 }
 
+.blogpost-intro {
+    width: 100% ;
+}
+
 .blogpost-text {
-    width: 60%;
+    width: 100%;
     max-width: 500px;
 }
 
 .blogpost-media {
-    width: 50%;
+    width: 100%;
     max-width: 300px;
 }
 

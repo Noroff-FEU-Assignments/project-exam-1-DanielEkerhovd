@@ -6,6 +6,7 @@ import { updateTitle } from "../tools/updateTitle.js";
 import { createModal } from "../pages/createModal.js";
 import { brewComponent } from "./components/brewIcons.js";
 import { createInfo } from "./components/blogInfo.js";
+import { changeParent } from "../tools/changeParent.js";
 
 export function createBlogPostHtml(api) {
 
@@ -57,12 +58,26 @@ export function createBlogPostHtml(api) {
     blogpostText.classList.add('blogpost-text');
     blogpostInformation.appendChild(blogpostText);
 
+    const blogpostMedia = document.createElement('div');
+    blogpostMedia.classList.add('blogpost-media');
+    blogpostInformation.appendChild(blogpostMedia);
+
     const blogpostIntro = document.createElement('h2');
     blogpostIntro.classList.add('blogpost-intro');
     blogpostIntro.classList.add("medium-font");
     blogpostIntro.textContent = selectedPost.acf.title_text;
     blogpostText.appendChild(blogpostIntro);
+    
 
+    const blogpostMainImage = document.createElement('img');
+    blogpostMainImage.classList.add('blogpost-main-image');
+    blogpostMainImage.classList.add('hover-effect');
+    blogpostMainImage.id = 'main-img';
+    blogpostMainImage.src = selectedPost.acf.content_img;
+    blogpostMainImage.alt = `Main image - ${selectedPost.acf.title}`;
+    
+    changeParent(blogpostMainImage, 1000);
+    
     createInfo(selectedPost);
     
     const endImage = document.createElement('img');
@@ -73,29 +88,20 @@ export function createBlogPostHtml(api) {
     endImage.alt = `End image - ${selectedPost.acf.title}`;
     blogpostText.appendChild(endImage);
 
-    const blogpostMedia = document.createElement('div');
-    blogpostMedia.classList.add('blogpost-media');
-    blogpostInformation.appendChild(blogpostMedia);
-
-    const blogpostMainImage = document.createElement('img');
-    blogpostMainImage.classList.add('blogpost-main-image');
-    blogpostMainImage.classList.add('hover-effect');
-    blogpostMainImage.id = 'main-img';
-    blogpostMainImage.src = selectedPost.acf.content_img;
-    blogpostMainImage.alt = `Main image - ${selectedPost.acf.title}`;
-    blogpostMedia.appendChild(blogpostMainImage);
-
     const brewingIndicators = document.createElement('div');
     brewingIndicators.classList.add('brewing-indicators');
-    blogpostMedia.appendChild(brewingIndicators);
+    blogpostText.appendChild(brewingIndicators);
 
     brewComponent(selectedPost, "yeast");
     brewComponent(selectedPost, "malt");
     brewComponent(selectedPost, "water");
     brewComponent(selectedPost, "hops");
 
+    changeParent(brewingIndicators, 1000);
+
     createModal('.blogpost-content', 'hero');
     createModal('.blogpost-content', 'main');
     createModal('.blogpost-content', 'end');
+
 
 }

@@ -28,7 +28,7 @@
 }
 
 .newest-post, .blog-post {
-    height: 400px;
+    height: auto;
 
     background-color: black;
     color: white;
@@ -38,6 +38,7 @@
     align-items: end;
     justify-content: start;
     gap: 20px;
+    padding-bottom: 20px
 }
 
 .newest-post a {
@@ -90,14 +91,6 @@
     flex-wrap: wrap;
 
     gap: 62px 40px;
-}
-
-.blog-post {
-    width: 100%;
-    max-width: 450px;
-
-    height: auto;
-    padding-bottom: 20px;
 }
 
 .see-more-button {
