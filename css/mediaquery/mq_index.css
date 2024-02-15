@@ -62,10 +62,6 @@
 
 @media (max-width: 600px) {
 
-   .hero-content {
-    
-   }
-
     .hero-content h1 {
         font-size: 8vw;
     }
@@ -74,6 +70,10 @@
         font-size: 3.5vw;
         max-width: 80%;
     }
+
+    .hero-image {
+        height: 200px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -81,6 +81,10 @@
     .carousell {
 
         width: 90%;
+    }
+
+    .blogs-carousell {
+       justify-content: start;
     }
 
     .index-blogs button {
