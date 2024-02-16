@@ -41,6 +41,11 @@
     padding-bottom: 20px
 }
 
+.blog-post {
+    width: 100%;
+    max-width: 450px;
+}
+
 .newest-post a {
     width: 100%;
 }
