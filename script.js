@@ -6,8 +6,11 @@ import { shrinkHeader } from "./js/tools/shrinkHeader.js";
 import { createCarousellContent } from "./js/pages/blogCarousell.js";
 import { indexCarousell } from "./js/carousell/carousell.js";
 import { hamburgerMenu } from "./js/content/hamburgerMenu.js";
+import { carousel } from "./js/pages/components/carousel.js";
+import { fetchDataAndSort } from "./js/api/sortByDate.js";
 
 const apiCalled = await fetchData(apiURL);
+const sortedApi = await fetchDataAndSort(apiCalled);
 
 hamburgerMenu();
 shrinkHeader();
@@ -16,22 +19,22 @@ switch (window.location.pathname) {
     case '/':
     case '/index.html':
 
-        indexCarousell();
-        createCarousellContent(apiCalled);
+        carousel();
+        createCarousellContent(sortedApi);
 
         break;
 
     case '/blogs.html':
     case '/blogs':
 
-         createBlogHtml(apiCalled);
+         createBlogHtml(sortedApi);
 
         break;
 
     case '/blogpost.html':
     case '/blogpost':
 
-        createBlogPostHtml(apiCalled);
+        createBlogPostHtml(sortedApi);
         break;
         
     default:

@@ -5,10 +5,10 @@ import { makeTitleFontSmaller } from "../tools/textLenght.js";
 export function createCarousellContent (api) {
     const carousell = document.querySelector('.carousell')
 
-    api.forEach(async (api) => {
-        
+    for (let i = 0; i < 11; i++) {
+
         const carousellLink = document.createElement('a');
-        carousellLink.href = `/blogpost.html?blogid=${api.id}`;
+        carousellLink.href = `/blogpost.html?blogid=${api[i].id}`;
         carousellLink.classList.add('carousell-link');
         carousell.appendChild(carousellLink);
 
@@ -18,8 +18,8 @@ export function createCarousellContent (api) {
 
         const carousellImage = document.createElement('img');
         carousellImage.classList.add('carousell-image');
-        carousellImage.src = api.acf.title_image;
-        carousellImage.alt = `Blog image - ${api.title.rendered}`;
+        carousellImage.src = api[i].acf.title_image;
+        carousellImage.alt = `Blog image - ${api[i].title.rendered}`;
         carousellItems.appendChild(carousellImage);
 
         const carousellTitle = document.createElement('div');
@@ -27,7 +27,7 @@ export function createCarousellContent (api) {
         carousellItems.appendChild(carousellTitle);
 
         const carousellTitleText = document.createElement('h2');
-        const title = api.title.rendered;
+        const title = api[i].title.rendered;
         carousellTitleText.classList.add('small-title');
         carousellTitleText.classList.add('carousell-title-text');
         const shorterTitle = maxTitleLenght(title, 22);
@@ -41,7 +41,7 @@ export function createCarousellContent (api) {
         const carousellDate = document.createElement('p');
         carousellDate.classList.add('card-date');
         carousellDate.classList.add('superlight-text');
-        carousellDate.textContent = api.acf.post_date;
+        carousellDate.textContent = api[i].acf.post_date;
         carousellTitle.appendChild(carousellDate);
 
         const carousellText = document.createElement('div');
@@ -50,12 +50,10 @@ export function createCarousellContent (api) {
         carousellItems.appendChild(carousellText);
 
         const carousellTextText = document.createElement('p');
-        const titleText = api.acf.title_text;
+        const titleText = api[i].acf.title_text;
         const shortText = maxTextLength(titleText, 24);
         carousellTextText.textContent = shortText;
         carousellText.appendChild(carousellTextText);
-
-
-    });
+    };
     
-}
+};

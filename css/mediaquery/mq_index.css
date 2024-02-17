@@ -78,13 +78,23 @@
 
 @media (max-width: 550px) {
 
+    .blogs-section {
+        width: 100%;
+        display: block;
+    }
     .carousell {
 
-        width: 90%;
+        width: 100%;
+
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
     }
 
     .blogs-carousell {
-       justify-content: start;
+        width: 100%;
     }
 
     .index-blogs button {

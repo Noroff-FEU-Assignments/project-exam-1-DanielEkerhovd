@@ -3,8 +3,6 @@ export function createNewestPost(api) {
 
     const newBlogContainer = document.querySelector('.blogs-content');
 
-    console.log(newBlogContainer);
-
     //Create the blog post card
     const blogPostCard = document.createElement('a');
     blogPostCard.href = `/blogpost.html?blogid=${api.id}`;

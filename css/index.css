@@ -41,7 +41,11 @@
 .index-divider {
     background-color: black;
     width: 100%;
-    height: 50px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .index-blogs {
@@ -56,6 +60,18 @@
     justify-content: center;
 }
 
+.latest-posts {
+    color: white
+
+
+}
+
+.blogs-section {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
 .blogs-carousell {
     width: 100%;
     height: 100%;
@@ -64,7 +80,8 @@
     align-items: center;
     justify-content: center;
 
-    gap: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousell-title {
@@ -76,19 +93,15 @@
 }
 
 .carousell {
-    width: 80%;
-    max-width: 1260px;
+    width: 100%;
     height: 400px;
 
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 20px;
-    
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+    transition: transform 0.5s ease;
 }
 
 .index-blogs button {
@@ -102,6 +115,10 @@
     width: 90%;
 }
 
+.prev, .next {
+
+    z-index: 1;
+}
 .prev {
     transform: rotate(180deg);
 }
