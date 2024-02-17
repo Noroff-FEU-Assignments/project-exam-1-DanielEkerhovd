@@ -99,9 +99,9 @@ export function createBlogPostHtml(api) {
 
     changeParent(brewingIndicators, 1000);
 
-    createModal('.blogpost-content', 'hero');
-    createModal('.blogpost-content', 'main');
-    createModal('.blogpost-content', 'end');
+    createModal('.blogpost-content', 'hero', selectedPost);
+    createModal('.blogpost-content', 'main', selectedPost);
+    createModal('.blogpost-content', 'end', selectedPost);
 
 
 }
