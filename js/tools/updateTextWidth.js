@@ -8,12 +8,9 @@ export function updateTextWidth (className, text, parent) {
         clearTimeout(timer);
         timer = setTimeout(() => {
 
-            console.log('Resizing');
-
             const parentContainer = document.querySelector(parent);
             const data = text
             const container = document.querySelector(className);
-            console.log(container);
             const currentWidth = window.innerWidth;
 
             if (currentWidth > 600) {

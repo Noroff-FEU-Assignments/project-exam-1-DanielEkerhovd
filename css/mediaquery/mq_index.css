@@ -109,7 +109,10 @@
 
     .ingredients {
         justify-content: center;
-        
         margin: 0 auto; 
+    }
+
+    .ingredient h3 {
+        font-size: 1.5em;
     }
 }
