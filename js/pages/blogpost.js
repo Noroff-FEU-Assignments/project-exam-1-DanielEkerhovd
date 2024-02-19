@@ -25,7 +25,7 @@ export function createBlogPostHtml(api) {
     blogpostHeroImg.classList.add('hover-effect')
     blogpostHeroImg.id = 'hero-img';
     blogpostHeroImg.src = selectedPost.acf.title_image;
-    blogpostHeroImg.alt = `Blog image - ${selectedPost.acf.title}`;
+    blogpostHeroImg.alt = selectedPost.acf.hero_img_alt;
     blogPostContainer.appendChild(blogpostHeroImg);
 
     const blogpostTitle = document.createElement('div');
@@ -71,11 +71,11 @@ export function createBlogPostHtml(api) {
     
 
     const blogpostMainImage = document.createElement('img');
-    blogpostMainImage.classList.add('blogpost-main-image');
     blogpostMainImage.classList.add('hover-effect');
+    blogpostMainImage.classList.add('blogpost-main-image');
     blogpostMainImage.id = 'main-img';
     blogpostMainImage.src = selectedPost.acf.content_img;
-    blogpostMainImage.alt = `Main image - ${selectedPost.acf.title}`;
+    blogpostMainImage.alt = selectedPost.acf.content_img_alt;
     
     changeParent(blogpostMainImage, 1000);
     
@@ -86,7 +86,7 @@ export function createBlogPostHtml(api) {
     endImage.classList.add('hover-effect')
     endImage.id = 'end-img';
     endImage.src = selectedPost.acf.end_img;
-    endImage.alt = `End image - ${selectedPost.acf.title}`;
+    endImage.alt = selectedPost.acf.end_img_alt;
     blogpostText.appendChild(endImage);
 
     const brewingIndicators = document.createElement('div');

@@ -104,8 +104,8 @@ animation: prixClipFix 2s linear infinite ;
     padding: 50px;
 }
 
-.active {
-    display: block;
+.hide {
+    display: none;
 }
 
 .title-spacing {

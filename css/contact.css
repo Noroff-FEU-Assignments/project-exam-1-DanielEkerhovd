@@ -78,4 +78,29 @@ input[type='submit'] {
     cursor: pointer;
 }
 
+.error-label {
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    
+    font-size: 0.6em;
+    font-weight: 700;
+
+}
+
+.error-icon {
+
+    height: 25px;
+}
+
+.error-age {
+
+    position: static;
+
+}
+
 
