@@ -15,6 +15,7 @@ export function createInfo (api) {
     
         let blogpostContent = document.createElement('h3');
         blogpostContent.classList.add('xsmall-title');
+        blogpostContent.classList.add('blogpost-info-title');
         blogpostContent.textContent = api.acf[`content_title_${i}`];
         blogpostInfo.appendChild(blogpostContent);
     

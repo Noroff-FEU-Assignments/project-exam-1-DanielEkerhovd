@@ -7,8 +7,7 @@
     min-height: 1000px;
     max-width: var(--contentWidth);
     margin: 0 auto;
-;
-}
+};
 
 .hover-effect:hover {
     cursor: pointer;
@@ -52,6 +51,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.blogpost-info-title {
+    margin-bottom: 20px;
 }
 
 .blogpost-intro {

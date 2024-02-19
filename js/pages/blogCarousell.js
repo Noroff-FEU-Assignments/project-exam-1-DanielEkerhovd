@@ -52,7 +52,7 @@ export function createCarousellContent (api) {
 
         const carousellTextText = document.createElement('p');
         const titleText = api[i].acf.title_text;
-        const shortText = maxTextLength(titleText, 22);
+        const shortText = maxTextLength(titleText, 18);
         carousellTextText.textContent = shortText;
         carousellText.appendChild(carousellTextText);
     };

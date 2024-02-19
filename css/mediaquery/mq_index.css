@@ -23,6 +23,9 @@
 
     }
 
+    .ingredients-content h2 {
+        font-size: 2em;
+    }
 
     .how-to-beer {
         height: auto;
@@ -53,10 +56,6 @@
     .ingredients img {
         width: 50px;
         height: 50px;
-    }
-
-    .ingredients-content h2 {
-        font-size: 6vw;
     }
 }
 
@@ -103,7 +102,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     .ingredients-content h2 {
         display: none;
     }

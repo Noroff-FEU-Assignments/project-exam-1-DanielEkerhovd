@@ -11,6 +11,8 @@ export function createBlogHtml(api) {
 
     const blogContainer = document.querySelector('.blog-posts');
 
+    blogContainer.innerHTML = '';
+
     //Don't render the first blog post in the blog-post container
     const removedItem = api.shift();
 

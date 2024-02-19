@@ -10,14 +10,15 @@ import { changeParent } from "../tools/changeParent.js";
 
 export function createBlogPostHtml(api) {
 
+    const blogPostContainer = document.querySelector('.blogpost-content');
+
+    blogPostContainer.innerHTML = '';
+
     returnToBlogs();
 
     const selectedPost = fetchDataByID(api);
 
     updateTitle(selectedPost.title.rendered);
-
-
-    const blogPostContainer = document.querySelector('.blogpost-content');
 
     const blogpostHeroImg = document.createElement('img');
     blogpostHeroImg.classList.add('blogpost-hero-img');
