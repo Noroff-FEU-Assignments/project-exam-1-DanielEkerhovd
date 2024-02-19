@@ -49,7 +49,7 @@ export function createBlogHtml(api) {
             const blogTitle = document.createElement('h2');
             const title = api[i].title.rendered;
             const titleLenght = makeTitleFontSmaller(title);
-            const finishedTitle = maxTitleLenght(title);
+            const finishedTitle = maxTitleLenght(title, 25);
     
             blogTitle.classList.add(titleLenght);
             blogTitle.textContent = finishedTitle
