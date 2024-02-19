@@ -49,7 +49,7 @@ export function createBlogHtml(api) {
             const blogTitle = document.createElement('h2');
             const title = api[i].title.rendered;
             const titleLenght = makeTitleFontSmaller(title);
-            const finishedTitle = maxTitleLenght(title, 25);
+            const finishedTitle = maxTitleLenght(title, 21);
     
             blogTitle.classList.add(titleLenght);
             blogTitle.textContent = finishedTitle
@@ -70,7 +70,7 @@ export function createBlogHtml(api) {
             //Create the blog post text
             const blogText = document.createElement('p');
             const titleText = api[i].acf.title_text;
-            const shortText = maxTextLength(titleText);
+            const shortText = maxTextLength(titleText, 32);
     
             blogText.classList.add('blog-text');
             blogText.classList.add('superlight-text');
