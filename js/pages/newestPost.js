@@ -1,3 +1,5 @@
+import { maxTextLength } from "../tools/textLenght.js";
+import { updateTextWidth } from "../tools/updateTextWidth.js";
 
 export function createNewestPost(api) {
 
@@ -52,8 +54,17 @@ export function createNewestPost(api) {
 
     //Create the blog post text
     const blogText = document.createElement('p');
-    blogText.textContent = api.acf.title_text;
+    blogText.classList.add('new-p');
+    const text = api.acf.title_text;
+    if (window.innerWidth <= 600) {
+        const shorterText = maxTextLength(text);
+        blogText.textContent = shorterText;
+    } else {    
+        blogText.textContent = text;
+    };
     newBlogText.appendChild(blogText);
+
+    updateTextWidth('.new-p', text, '.new-blog-text')
 
     const newPostIcon = document.createElement('img');
     newPostIcon.src = '/media/icons/new.png';
