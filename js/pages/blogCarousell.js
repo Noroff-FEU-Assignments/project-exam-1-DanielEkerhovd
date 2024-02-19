@@ -5,6 +5,7 @@ import { makeTitleFontSmaller } from "../tools/textLenght.js";
 export function createCarousellContent (api) {
     const carousell = document.querySelector('.carousell')
 
+    carousell.innerHTML = '';
     for (let i = 0; i < 11; i++) {
 
         const carousellLink = document.createElement('a');
@@ -51,7 +52,7 @@ export function createCarousellContent (api) {
 
         const carousellTextText = document.createElement('p');
         const titleText = api[i].acf.title_text;
-        const shortText = maxTextLength(titleText, 24);
+        const shortText = maxTextLength(titleText, 22);
         carousellTextText.textContent = shortText;
         carousellText.appendChild(carousellTextText);
     };
