@@ -10,8 +10,10 @@ import { carousel } from "./js/pages/components/carousel.js";
 import { fetchDataAndSort } from "./js/api/sortByDate.js";
 import { formValidation } from "./js/form_validation/formValidation.js";
 
+
 const apiCalled = await fetchData(apiURL);
-const sortedApi = await fetchDataAndSort(apiCalled);
+const sortedApi = await fetchDataAndSort(apiCalled);    
+
 
 hamburgerMenu();
 shrinkHeader();

@@ -50,7 +50,6 @@ body {
     background-color:#1C1710;
 }
 
-
 a:visited, a:link {
     color: inherit;
 }
@@ -97,6 +96,11 @@ animation: prixClipFix 2s linear infinite ;
     50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+.main-space {
+    width: 100%;
+    height: 130px;
 }
 
 .show {

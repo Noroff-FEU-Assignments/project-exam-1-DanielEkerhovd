@@ -20,13 +20,23 @@
         font-size: 4vw;
     }
 
+
     .blogs-page h2 {
         font-size: 7vw;
+    }
+
+    .new-blog-text {
+        flex-direction: column-reverse;
     }
 
     .new-blog-text img {
         width: 80px;
         height: 80px;
+
+        background-color: black;
+        border-radius: 50%;
+
+        align-self: start;
     }
 
     .back-up {

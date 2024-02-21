@@ -1,60 +1,66 @@
 import { maxTextLength } from "../tools/textLenght.js";
 import { maxTitleLenght } from "../tools/textLenght.js";
 import { makeTitleFontSmaller } from "../tools/textLenght.js";
+import { createErrorMessage } from "../error/errorMessage.js";
 
 export function createCarousellContent (api) {
+
     const carousell = document.querySelector('.carousell')
 
     carousell.innerHTML = '';
-    for (let i = 0; i < 11; i++) {
 
-        const carousellLink = document.createElement('a');
-        carousellLink.href = `/blogpost.html?blogid=${api[i].id}`;
-        carousellLink.classList.add('carousell-link');
-        carousell.appendChild(carousellLink);
+        if (api.length === 0) {
+            throw new Error('No posts found');
+        }
+        for (let i = 0; i < 11; i++) {
 
-        const carousellItems = document.createElement('div');
-        carousellItems.classList.add('carousell-item');
-        carousellLink.appendChild(carousellItems);
+            const carousellLink = document.createElement('a');
+            carousellLink.href = `/blogpost.html?blogid=${api[i].id}`;
+            carousellLink.classList.add('carousell-link');
+            carousell.appendChild(carousellLink);
 
-        const carousellImage = document.createElement('img');
-        carousellImage.classList.add('carousell-image');
-        carousellImage.src = api[i].acf.title_image;
-        carousellImage.alt = `Blog image - ${api[i].title.rendered}`;
-        carousellItems.appendChild(carousellImage);
+            const carousellItems = document.createElement('div');
+            carousellItems.classList.add('carousell-item');
+            carousellLink.appendChild(carousellItems);
 
-        const carousellTitle = document.createElement('div');
-        carousellTitle.classList.add('carousell-title');    
-        carousellItems.appendChild(carousellTitle);
+            const carousellImage = document.createElement('img');
+            carousellImage.classList.add('carousell-image');
+            carousellImage.src = api[i].acf.title_image;
+            carousellImage.alt = `Blog image - ${api[i].title.rendered}`;
+            carousellItems.appendChild(carousellImage);
 
-        const carousellTitleText = document.createElement('h2');
-        const title = api[i].title.rendered;
-        carousellTitleText.classList.add('small-title');
-        carousellTitleText.classList.add('carousell-title-text');
-        const shorterTitle = maxTitleLenght(title, 22);
-        carousellTitleText.textContent = shorterTitle;
-        carousellTitle.appendChild(carousellTitleText);
+            const carousellTitle = document.createElement('div');
+            carousellTitle.classList.add('carousell-title');    
+            carousellItems.appendChild(carousellTitle);
 
-        const carousellDivider = document.createElement('div');
-        carousellDivider.classList.add('card-divider');
-        carousellTitle.appendChild(carousellDivider);
+            const carousellTitleText = document.createElement('h2');
+            const title = api[i].title.rendered;
+            carousellTitleText.classList.add('small-title');
+            carousellTitleText.classList.add('carousell-title-text');
+            const shorterTitle = maxTitleLenght(title, 22);
+            carousellTitleText.textContent = shorterTitle;
+            carousellTitle.appendChild(carousellTitleText);
 
-        const carousellDate = document.createElement('p');
-        carousellDate.classList.add('card-date');
-        carousellDate.classList.add('superlight-text');
-        carousellDate.textContent = api[i].acf.post_date;
-        carousellTitle.appendChild(carousellDate);
+            const carousellDivider = document.createElement('div');
+            carousellDivider.classList.add('card-divider');
+            carousellTitle.appendChild(carousellDivider);
 
-        const carousellText = document.createElement('div');
-        carousellText.classList.add('carousell-text');
-        carousellText.classList.add('light-text');
-        carousellItems.appendChild(carousellText);
+            const carousellDate = document.createElement('p');
+            carousellDate.classList.add('card-date');
+            carousellDate.classList.add('superlight-text');
+            carousellDate.textContent = api[i].acf.post_date;
+            carousellTitle.appendChild(carousellDate);
 
-        const carousellTextText = document.createElement('p');
-        const titleText = api[i].acf.title_text;
-        const shortText = maxTextLength(titleText, 18);
-        carousellTextText.textContent = shortText;
-        carousellText.appendChild(carousellTextText);
-    };
-    
+            const carousellText = document.createElement('div');
+            carousellText.classList.add('carousell-text');
+            carousellText.classList.add('light-text');
+            carousellItems.appendChild(carousellText);
+
+            const carousellTextText = document.createElement('p');
+            const titleText = api[i].acf.title_text;
+            const shortText = maxTextLength(titleText, 18);
+            carousellTextText.textContent = shortText;
+            carousellText.appendChild(carousellTextText);
+        };
+
 };
