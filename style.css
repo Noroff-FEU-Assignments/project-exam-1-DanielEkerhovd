@@ -196,7 +196,7 @@ animation: prixClipFix 2s linear infinite ;
 }
 
 
-.error-message {
+.error-display {
     color: white;
     font-family: var(--titles);
     margin: 0 auto;
