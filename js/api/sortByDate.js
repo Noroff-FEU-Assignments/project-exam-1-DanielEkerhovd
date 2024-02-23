@@ -12,6 +12,7 @@ export async function fetchDataAndSort(api) {
     return api;
 
     } catch (error) {
-        console.error('Error fetching data:', error);
+        
+        return 'error';
     }
 };

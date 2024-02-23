@@ -196,3 +196,12 @@ animation: prixClipFix 2s linear infinite ;
 }
 
 
+.error-message {
+    color: white;
+    font-family: var(--titles);
+    margin: 0 auto;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
