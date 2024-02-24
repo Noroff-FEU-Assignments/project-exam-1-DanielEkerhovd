@@ -14,6 +14,10 @@
     gap: 27px;
 }
 
+.contact-content h1 {
+    font-size: 40px;
+}
+
 .contact-info h2 {
     font-size: 2.78rem;
     text-align: justify;

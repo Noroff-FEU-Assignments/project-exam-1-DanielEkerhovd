@@ -10,6 +10,10 @@
         margin-bottom: 20px;
     }
 
+    .contact-content h1 {
+        font-size: 30px;
+    }
+
     .contact-info, .contact-form {
         max-width: 500px;
     }
