@@ -75,7 +75,7 @@ export function createBlogHtml(api) {
     
             blogText.classList.add('blog-text');
             blogText.classList.add('superlight-text');
-            blogText.textContent = shortText
+            blogText.textContent = shortText;
             blogPostDiv.appendChild(blogText);
         }
 
@@ -86,7 +86,9 @@ export function createBlogHtml(api) {
         };  
 
         if (api.length > 10) {
-            const moreButton = document.querySelector('.see-more-button')
+
+            const moreButton = document.querySelector('.see-more-button');
+
             moreButton.addEventListener('click', () => {
 
             for (let i = 10; i < api.length; i++) {
@@ -99,6 +101,7 @@ export function createBlogHtml(api) {
             moreButton.disabled = true;
                 
          });
+
         }
 
     };

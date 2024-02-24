@@ -9,8 +9,6 @@ export function formValidation() {
     const message = document.querySelector('#message');
     const age = document.querySelector('#terms');
 
-    console.log(email.validity.valid);
-
     const errorName = document.querySelector('.error-name');
     const errorEmail = document.querySelector('.error-email');
     const errorSubject = document.querySelector('.error-subject');
@@ -18,8 +16,6 @@ export function formValidation() {
     const errorAge = document.querySelector('.error-age');
 
     const errorText = document.querySelectorAll('.error-text');
-
-    console.log(form);
 
     form.addEventListener('submit', (event) => {
 
