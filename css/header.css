@@ -51,6 +51,12 @@ header {
     font-size: 1.5rem;
 }
 
+.current-page {
+    text-decoration: underline;
+    text-underline-offset: 9px;
+
+}
+
 .hamburger-list {
 
     position: absolute;
