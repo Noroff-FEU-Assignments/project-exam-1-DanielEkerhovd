@@ -47,6 +47,7 @@ export function createBlogHtml(api) {
     
             //Create the blog post title
             const blogTitle = document.createElement('h2');
+            blogTitle.classList.add('blogcard-title');
             const title = api[i].title.rendered;
             const titleLenght = makeTitleFontSmaller(title);
             const finishedTitle = maxTitleLenght(title, 21);

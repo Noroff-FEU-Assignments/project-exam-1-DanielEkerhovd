@@ -61,6 +61,10 @@
     width: 95%;
 }
 
+.blogcard-title {
+    min-height: 31px;
+}
+
 .new-blog-text, .blog-text {
     align-self: flex-start;
     width: 95%;
