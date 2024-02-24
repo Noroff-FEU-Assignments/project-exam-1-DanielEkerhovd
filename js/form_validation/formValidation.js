@@ -39,9 +39,9 @@ export function formValidation() {
             messages.push('');
         }
 
-        if (!email.validity.valid) {
+        if (!email.value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
             errorEmail.classList.remove('hide');
-            messages.push('Email is required')
+            messages.push('Email must be a valid email address')
             errorStatus = true;
         } else {
             messages.push('');

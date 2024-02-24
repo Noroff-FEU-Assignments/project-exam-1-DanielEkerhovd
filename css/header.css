@@ -2,14 +2,16 @@ header {
     width: 100%;
     height: auto;
     position: fixed;
+    background-color: var(--yellow);
     top: 0;
     z-index: 5;
 }
 
 .header-content {
     width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
     height: 130px;
-    background-color: var(--yellow);
     color: black;
 
     display: flex;
