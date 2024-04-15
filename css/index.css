@@ -141,6 +141,10 @@
     width: 100%;
 }
 
+.carousell-item:hover {
+    transform: scale(1.05);
+}
+
 .carousell-title {
     width: 95%;
     color: white;
